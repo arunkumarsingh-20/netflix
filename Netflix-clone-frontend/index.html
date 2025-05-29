@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NetflixClone.com</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div class="main">
+    <div class="overlay">
+      <header>
+        <img src="images/https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo" class="logo" />
+        <div class="buttons">
+          <select class="language-select">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+          </select>
+          <button class="sign-in">Sign In</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>Unlimited movies, TV shows and more</h1>
+        <p class="sub-text">Starts at ₹149. Cancel at any time.</p>
+        <p class="small-text">Ready to watch? Enter your email to create or restart your membership.</p>
+        <form class="email-form">
+          <input type="email" placeholder="Email address" required />
+          <button type="submit">Get Started ></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trending Now Section -->
+  <section class="trending-section">
+    <h2>Trending Now</h2>
+    <div class="trending-row">
+      <div class="slider-wrapper">
+    <button class="scroll-btn left" onclick="scrollSlider(-1)">&#8249;</button>
+            <div class="slider-container" id="slider">
+      <div class="slide">
+        <div class="slide-number">1</div>
+        <div class="slide"><a href="https://www.netflix.com/in/title/80100172"><img src="images/netflix-image1.jpeg" alt="Image 1"></a></div>
+      </div>
+      <div class="slide">
+        <div class="slide-number">2</div>
+        <div class="slide"><a href="https://www.netflix.com/in/title/80198988"><img src="images/netflix-image2.jpg" alt="Image 2"></a></div>
+      </div>
+      <div class="slide">
+        <div class="slide-number">3</div>
+        <div class="slide"><a href="https://www.netflix.com/in/title/80200575"><img src="images/netflix-image3.jpg" alt="Image 3"></a></div>
+      </div>
+      <div class="slide">
+        <div class="slide-number">4</div>
+        <div class="slide"><a href="https://www.netflix.com/in/title/81719583"><img src="images/netflix-image4.jpg" alt="Image 4"></a></div>
+      </div>
+      <div class="slide">
+        <div class="slide-number">5</div>
+        <div class="slide"><a href="https://www.netflix.com/in/title/80241581"><img src="images/netflix-image5.jpg" alt="Image 5"></a></div>
+      </div>
+      <div class="slide">
+        <div class="slide-number">6</div>
+        <div class="slide"><a href="https://www.netflix.com/in/title/80057281"><img src="images/netflix-image6.jpg" alt="Image 6"></a></div>
+      </div>
+      <div class="slide">
+        <div class="slide-number">7</div>
+        <div class="slide"><a href="https://www.netflix.com/in/title/81137088"><img src="images/netflix-image7.jpg" alt="Image 7"></a></div>
+      </div>
+      <div class="slide">
+        <div class="slide-number">8</div>
+        <div class="slide"><a href="https://www.netflix.com/in/title/80192098"><img src="images/netflix-image8.jpg" alt="Image 8"></a></div>
+      </div>
+      <div class="slide">
+        <div class="slide-number">9</div>
+        <div class="slide"><a href="https://www.netflix.com/in/title/81040344"><img src="images/netflix-image9.jpg" alt="Image 9"></a></div>
+      </div>
+      <div class="slide">
+        <div class="slide-number">10</div>
+        <div class="slide"><a href="https://www.netflix.com/in/title/81570912"><img src="images/netflix-image10.jpg" alt="Image 10"></a></div>
+      </div>
+    </div>
+    
+    <button class="scroll-btn right" onclick="scrollSlider(1)">&#8250;</button>
+  </div>
+    </div>
+  </section>
+
+  <!-- More Reasons Section -->
+  <section class="reasons-section">
+    <h2>More reasons to join</h2>
+    <div class="reasons-row">
+      <div style="margin-left: 90px;" class="reason-card">
+        <h3>Enjoy on your TV</h3>
+        <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        <img src="images/netflix-tv.png" alt="TV Icon">
+      </div>
+      <div class="reason-card">
+        <h3>Download your shows to watch offline</h3>
+        <p>Save your favourites easily and always have something to watch.</p>
+        <img src="images/netflix-download.png" alt="TV Icon">
+      </div>
+      <div class="reason-card">
+        <h3>Watch everywhere</h3>
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+        <img src="images/netflix-watch.png" alt="TV Icon">
+      </div>
+      <div class="reason-card" style="margin-right: 96px;">
+        <h3>Create profiles for kids</h3>
+        <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+        <img src="images/netflix-kids.png" alt="TV Icon">
+      </div>
+    </div>
+  </section>
+  <section class="faq-section">
+    <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <div class="faq-item">
+        What is Netflix?
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+        <p style="margin-bottom: 0px;">You can watch as much as you want, whenever you want, without a single ad - all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+      </div>
+
+      <div class="faq-item">
+        How much does Netflix cost?
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+      </div>
+
+      <div class="faq-item">
+        Where can I watch?
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        You can watch on any device that has the Netflix app, including smart TVs, game consoles, streaming media players, set-top boxes, smartphones, and tablets.
+      </div>
+
+      <div class="faq-item">
+        How do I cancel?
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks.
+      </div>
+
+      <div class="faq-item">
+        What can I watch on Netflix?
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more.
+      </div>
+
+      <div class="faq-item">
+        Is Netflix good for kids?
+        <span class="icon">+</span>
+      </div>
+      <div class="faq-answer">
+        The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies.
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="footer">
+    <div class="footer-container">
+
+    <!-- Email Signup Section -->
+    <div class="email-section">
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <form class="email-form-footer">
+        <input type="email" placeholder="Email address" required />
+        <button type="submit">Get Started ></button>
+      </form>
+    </div>
+
+    <!-- Call Section -->
+    <div class="footer-call">
+      Any Questions? Call <a href="tel:+919084843022">+919084843022</a>
+    </div>
+
+    <!-- Footer Links Grid -->
+    <div class="footer-links">
+      <a href="https://help.netflix.com/support/412">FAQ</a>
+      <a href="https://help.netflix.com/">Help Centre</a>
+      <a href="https://www.netflix.com/youraccount">Account</a>
+      <a href="https://media.netflix.com/">Media Centre</a>
+      <a href="http://ir.netflix.com/">Investor Relations</a>
+      <a href="https://jobs.netflix.com/jobs">Jobs</a>
+      <a href="https://www.netflix.com/watch">Ways to Watch</a>
+      <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+      <a href="https://help.netflix.com/legal/privacy">Privacy</a>
+      <a href="https://www.netflix.com/in/#">Cookie Preferences</a>
+      <a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a>
+      <a href="https://help.netflix.com/contactus">Contact Us</a>
+      <a href="https://fast.com/">Speed Test</a>
+      <a href="https://help.netflix.com/legal/notices">Legal Notices</a>
+      <a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a>
+    </div>
+
+    <!-- Language Select -->
+    <div class="buttons">
+          <select class="language-select-footer">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+          </select>
+        </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p class="netflix-india">Netflix India</p>
+      <p class="bot-msg">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span><a href="#">Learn more.</a></span> </p> 
+      
+    </div>
+    <div class="copyright">
+      Designed By:  <a href="https://www.linkedin.com/in/arun-kumar-singh-19334a29b/" target="_blank"><span>Arun Kumar Singh</span></a>
+    </div>
+
+  </div>
+  </section>
+</body>
+
+  <script>
+    function scrollSlider(direction) {
+      const slider = document.getElementById('slider');
+      const scrollAmount = slider.clientWidth * 0.8; // scroll by 80% width
+      slider.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+<script>
+    const items = document.querySelectorAll('.faq-item');
+
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        // Close all other items
+        items.forEach(i => {
+          if (i !== item) {
+            i.classList.remove('active');
+          }
+        });
+
+        // Toggle current item
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+  
+</html>
